@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OGLY | Solana coin and portfolio buybacks</title>
+<meta name="description" content="Portfolio results become OGLY demand on Solana; every coin acquired gets burned.">
+<meta name="theme-color" content="{{THEME_COLOR}}">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/logo-192.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:title" content="OGLY">
+<meta property="og:description" content="Gains in, supply out.">
+<meta property="og:image" content="assets/logo-512.png">
+<script type="application/json" id="register">{{REGISTER_INLINE}}</script>
+</head>
+<body id="top" data-ca-state="{{CA_STATE}}">
+<a class="skip" href="#main">Jump to main</a>
+<div class="progress" aria-hidden="true"><i data-progress></i></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="#top" aria-label="OGLY home"><img src="assets/ogly-mark.png" width="32" height="32" alt=""><span>OGLY</span></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#flow">Flow</a><a href="#plan">Plan</a><a href="#board">Board</a><a href="#answers">Answers</a>
+    </nav>
+    {{SOCIAL}}
+  </div>
+</header>
+
+{{CA_SLOT}}
+
+<div class="ticker" aria-label="Moving price strip" role="region">
+  <div class="ticker__track" data-ticker-track><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span></div>
+</div>
+
+<main id="main" tabindex="-1">
+  <div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <section class="hero wrap" aria-labelledby="hero-title" data-parallax>
+    <div class="hero__heading" data-reveal>
+      <h1 id="hero-title"><b>OGLY.</b> <span>Gains in, supply out.</span></h1>
+    </div>
+    <div class="hero__copy" data-reveal data-reveal-delay="80">
+      <p>OGLY pairs a managed portfolio plus one Solana coin. Fifty percent of booked portfolio gains funds OGLY purchases, then every coin acquired is destroyed permanently.</p>
+      <div class="actions">
+        <a class="btn btn--solid" href="#board">Open board</a>
+        <a class="btn btn--outline" href="#flow">Follow flow</a>
+        <a class="link" href="#answers">Get answers</a>
+      </div>
+    </div>
+    <aside class="ledger card" aria-labelledby="ledger-title" data-reveal data-reveal-delay="140" data-spot>
+      <h2 id="ledger-title">Fund ledger</h2>
+      <dl>
+        <div><dt>Gains realized</dt><dd class="is-pending">pending</dd></div>
+        <div><dt>Set aside for buys</dt><dd class="is-pending">pending</dd></div>
+        <div><dt>Trigger level</dt><dd class="is-pending">pending</dd></div>
+      </dl>
+      <p class="ledger__status">Buying begins when numbers appear in this panel.</p>
+      <p>A slot fills solely off a recorded source; no number here is guessed.</p>
+    </aside>
+    <div class="hero__art" aria-hidden="true">
+      <div class="layer" data-depth="0.4"><div class="ring ring--a"></div></div>
+      <div class="layer" data-depth="0.9"><div class="ring ring--b"></div></div>
+      <div class="layer" data-depth="1.5"><div class="ring ring--c"></div></div>
+      <div class="layer" data-depth="2.2"><span class="orb orb--1"></span><span class="orb orb--2"></span><span class="orb orb--3"></span></div>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="frame-title">
+    <div class="section__head" data-reveal>
+      <h2 id="frame-title">One frame, whole surface.</h2>
+      <p>Terminal mockup drawn by the team.</p>
+    </div>
+    <figure class="frame" data-reveal data-spot>
+      <img src="assets/banner.jpg" width="1500" height="500" alt="OGLY banner showing terminal mockup" loading="lazy" decoding="async">
+      <figcaption>Artwork supplied by the team.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section wrap" id="brief" aria-labelledby="brief-title">
+    <div class="section__head" data-reveal>
+      <h2 id="brief-title">Five things to remember.</h2>
+      <p>What OGLY does, what it omits, plus ways to verify.</p>
+    </div>
+    <ol class="points">
+      <li class="point card" data-reveal data-spot><span class="point__n">1</span><h3>Results feed demand.</h3><p>Realized fund gains are routed toward buying OGLY, so portfolio performance turns into buying pressure.</p></li>
+      <li class="point card" data-reveal data-reveal-delay="60" data-spot><span class="point__n">2</span><h3>A slice, not everything.</h3><p>Fifty percent of whatever gains the portfolio has booked is earmarked. The remainder stays outside the program.</p></li>
+      <li class="point card" data-reveal data-reveal-delay="120" data-spot><span class="point__n">3</span><h3>Gone on arrival.</h3><p>Each coin acquired through the earmark is sent to destruction, leaving a circulating count that only shrinks.</p></li>
+      <li class="point card" data-reveal data-reveal-delay="180" data-spot><span class="point__n">4</span><h3>Slots, never guesses.</h3><p>A figure shows up once a record backs it. Until then, the slot reads pending.</p></li>
+      <li class="point card" data-reveal data-reveal-delay="240" data-spot><span class="point__n">5</span><h3>One mint counts.</h3><p>Just the mint printed above identifies OGLY. Lookalike labels mean nothing.</p></li>
+    </ol>
+  </section>
+
+  <section class="section wrap" id="verify" aria-labelledby="verify-title">
+    <div class="section__head" data-reveal>
+      <h2 id="verify-title">Verify, then follow.</h2>
+      <p>Compare each character displayed by the mint strip against your signing app before swapping.</p>
+    </div>
+    <div class="identity card" data-reveal data-spot>
+      <div class="identity__token"><span class="tile tile--brand"><img src="assets/ogly-logo.png" width="64" height="64" alt=""></span><div><strong>OGLY</strong><span class="sub">{{CHAIN_NAME}} network</span></div></div>
+      <p>Explorer shortcuts below stay dormant until published. Each opens an outside site and implies no endorsement or depth of liquidity.</p>
+    </div>
+    <ul class="venues" aria-label="Explorer shortcuts">{{VENUES}}</ul>
+    <div class="safety" data-reveal><h2>Check twice, swap once.</h2><p>Recovery phrases never go into any form. Rely solely upon the top strip plus shortcuts listed here.</p></div>
+  </section>
+
+  <nav class="jump wrap" aria-label="In-page links">
+    <a href="#flow">Flow</a><a href="#plan">Plan</a><a href="#board">Board</a><a href="#answers">Answers</a>
+  </nav>
+
+  <section class="section wrap" id="behind" aria-labelledby="behind-title">
+    <div class="section__head" data-reveal>
+      <h2 id="behind-title">Who stands behind OGLY.</h2>
+      <p>OGLY serves as the coin side of a managed portfolio. Portfolio results flow into coin purchases.</p>
+    </div>
+    <div class="proof" aria-label="Program numbers">
+      <div class="slot card" data-reveal data-spot><strong>50%</strong><span>Slice of booked gains earmarked</span></div>
+      <div class="slot card is-pending" data-reveal data-reveal-delay="60" data-spot><strong>pending</strong><span>Fund gains booked</span></div>
+      <div class="slot card is-pending" data-reveal data-reveal-delay="120" data-spot><strong>pending</strong><span>Coins acquired</span></div>
+      <div class="slot card is-pending" data-reveal data-reveal-delay="180" data-spot><strong>pending</strong><span>Coins destroyed</span></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="flow" aria-labelledby="flow-title">
+    <div class="section__head" data-reveal>
+      <h2 id="flow-title">Gains, purchases, destruction.</h2>
+      <p>Booked gains finance purchases. Anything bought is destroyed, so supply moves one direction only.</p>
+    </div>
+    <div class="beam" data-reveal>
+      <ol>
+        <li><span class="beam__node"></span><h3>Fund earns.</h3><strong class="beam__num is-pending">pending</strong><p>Gains booked by traders.</p></li>
+        <li><span class="beam__node"></span><h3>OGLY gets bought.</h3><strong class="beam__num">50%</strong><p>Spendable gains routed toward purchases.</p></li>
+        <li><span class="beam__node"></span><h3>Total destruction.</h3><strong class="beam__num">100%</strong><p>Everything the earmark purchases is deleted forever.</p></li>
+      </ol>
+    </div>
+    <div class="beam__details">
+      <div class="card" data-reveal data-spot><h4>Remainder</h4><p>Remains outside this program; it never purchases OGLY.</p></div>
+      <div class="card" data-reveal data-reveal-delay="80" data-spot><h4>Burn, explained</h4><p>Supply shrinks. No price level is set and no result is promised.</p></div>
+    </div>
+    <p class="note" data-reveal>Zero booked gain, zero buying.</p>
+  </section>
+
+  <section class="section wrap" id="plan" aria-labelledby="plan-title">
+    <div class="section__head" data-reveal>
+      <h2 id="plan-title">Where this heads.</h2>
+      <p>Trio of aims in sequence. Treat them as targets, never delivery guarantees.</p>
+    </div>
+    <ol class="steps">
+      <li class="step card" data-reveal data-spot><p class="step__h">Near</p><h3>Opening cycle.</h3><p>Buy OGLY, destroy what was bought, post receipts, then restart trading.</p></li>
+      <li class="step card" data-reveal data-reveal-delay="80" data-spot><p class="step__h">Middle</p><h3>Widen the base.</h3><p>Grow assets under management plus venue access once one complete loop finishes.</p></li>
+      <li class="step card" data-reveal data-reveal-delay="160" data-spot><p class="step__h">Far</p><h3>Sharpen the craft.</h3><p>Better models, cleaner fills, clearer disclosure.</p></li>
+    </ol>
+  </section>
+
+  <section class="section wrap" id="board" aria-labelledby="board-title">
+    <div class="section__head" data-reveal>
+      <h2 id="board-title">OGLY board.</h2>
+      <p>Solana coins sorted by one-day turnover; OGLY holds row one.</p>
+    </div>
+    <div class="board" data-board data-reveal>
+      <div class="board__overview">
+        <div>
+          <div class="board__token"><span class="tile tile--brand"><img src="assets/ogly-logo.png" width="44" height="44" alt=""></span><div><h3>OGLY</h3><small>{{CHAIN_NAME}}</small></div></div>
+          <div class="board__price"><strong data-own-price class="is-pending">pending</strong><span data-own-change></span></div>
+        </div>
+        <dl class="board__summary">
+          <div><dt>Mkt cap</dt><dd class="is-pending" data-own-mc>pending</dd></div>
+          <div><dt>Turnover (24h)</dt><dd class="is-pending" data-own-vol>pending</dd></div>
+          <div><dt>Liquidity</dt><dd class="is-pending" data-own-liq>pending</dd></div>
+          <div><dt>Holders</dt><dd class="is-pending">pending</dd></div>
+        </dl>
+      </div>
+      <div class="tabs" data-tabs>
+        <div role="tablist" aria-label="Board views">
+          <button type="button" role="tab" id="tab-trend" aria-controls="panel-trend" aria-selected="true">Trending</button>
+          <button type="button" role="tab" id="tab-feed" aria-controls="panel-feed" aria-selected="false" tabindex="-1">Feed</button>
+          <button type="button" role="tab" id="tab-token" aria-controls="panel-token" aria-selected="false" tabindex="-1">Token</button>
+        </div>
+        <span class="pill" data-status data-state="loading" role="status"><i></i><span data-status-text>Syncing</span></span>
+      </div>
+      <div id="panel-trend" role="tabpanel" aria-labelledby="tab-trend" class="panel">
+        <p class="panel__note" data-board-note></p>
+        <div class="cols" aria-hidden="true"><span>#</span><span>Token</span><span>Price</span><span>24h</span><span>Turnover</span><span>Liquidity</span><span></span></div>
+        <ul class="rows" data-rows></ul>
+      </div>
+      <div id="panel-feed" role="tabpanel" aria-labelledby="tab-feed" class="panel" hidden>
+        <p class="plain">Data flows via a neutral DEX aggregator. Boosted entries are narrowed to Solana, matched with each coin's busiest pool, then ranked by one-day turnover. Refresh runs every minute and sleeps whenever this tab is hidden.</p>
+      </div>
+      <div id="panel-token" role="tabpanel" aria-labelledby="tab-token" class="panel" hidden>
+        <dl class="kv">
+          <div><dt>Supply size</dt><dd class="is-pending">pending</dd></div>
+          <div><dt>Burned amount</dt><dd class="is-pending">pending</dd></div>
+          <div><dt>Minting rights</dt><dd class="is-pending">pending</dd></div>
+        </dl>
+      </div>
+      <div class="health"><span>Quotes are indicative and sourced externally.</span></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="answers" aria-labelledby="answers-title">
+    <div class="section__head" data-reveal>
+      <h2 id="answers-title">Straight answers.</h2>
+      <p>Mechanism, limits, and blind spots.</p>
+    </div>
+    <div class="faq" data-reveal>
+      <details><summary>Why hold OGLY at all?<span aria-hidden="true">+</span></summary><p>Backers wager on a cycle: gains become purchases, purchases become deletions. It succeeds only while the portfolio keeps profiting and buyers stay interested.</p></details>
+      <details><summary>What exactly gets burned?<span aria-hidden="true">+</span></summary><p>Only coins acquired through the earmark. Coins sitting in other wallets stay untouched.</p></details>
+      <details><summary>Why are some numbers pending?<span aria-hidden="true">+</span></summary><p>Numbers show up solely when a source backs them; otherwise the slot says pending, never an estimate.</p></details>
+      <details><summary>Which mint is genuine?<span aria-hidden="true">+</span></summary><p>Whatever mint the top strip displays after publication. Treat every other string as unrelated.</p></details>
+      <details><summary>Is this advice?<span aria-hidden="true">+</span></summary><p>No. Prices swing violently and value can vanish. Decide independently and stake only spare funds.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div><a class="brand" href="#top" aria-label="OGLY home"><img src="assets/ogly-mark.png" width="32" height="32" alt=""><span>OGLY</span></a><p class="tag">Gains in, supply out.</p></div>
+      <nav aria-label="Page"><h4>Page</h4><a href="#flow">Flow</a><a href="#plan">Plan</a><a href="#board">Board</a><a href="#answers">Answers</a></nav>
+      <nav aria-label="Network"><h4>Network</h4><span>{{CHAIN_NAME}}</span><a href="#verify">Verify</a></nav>
+    </div>
+    <p class="footer__legal">Crypto prices swing wildly and may hit zero. Nothing here counts as investment guidance.</p>
+  </div>
+</footer>
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

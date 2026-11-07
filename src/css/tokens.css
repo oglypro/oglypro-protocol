@@ -1,0 +1,84 @@
+/*
+  OGLY design tokens. This is the ONLY file allowed to hold colour literals.
+
+  Palette provenance: every value below was found by k-means (k=6) over the
+  opaque pixels of the supplied assets, then snapped to the nearest real
+  pixel of that asset. The coordinate is the x,y of that pixel.
+
+  brand/LOGO OGLY PNG.png (2000x2000, IHDR colortype 2, fully opaque)
+    navy        #01132f  at 0,54
+    blue-deep   #022c6a  at 263,8
+    blue        #024fa2  at 605,1
+    blue-bright #0178ce  at 913,0
+    sky         #14a3ed  at 1414,13
+    white       #fcfcfd  at 962,495
+  reference/SAMPUL OGLY JPG.jpg.jpeg (1500x500)
+    bg-soft     #041421  at 267,21
+    mint        #03b96e  at 285,211
+    cyan        #0ebed6  at 95,366
+    purple      #8e08f2  at 804,460  (bearish candle pixel, hue search)
+  reference/OGLY 1.jpg.jpeg (1600x900)
+    bg          #010d1b  at 448,109
+    teal        #033244  at 726,426
+    mint-deep   #058f51  at 294,538
+    text        #f0f0f2  at 1323,226
+    muted       #808992  at 1178,449
+
+  brand/LOGO OGLY PNG...png (colortype 6) holds pure-black RGB under alpha 0
+  (3356424 px), so every resize of it is done on premultiplied values.
+*/
+:root {
+  color-scheme: dark;
+
+  --color-bg: #010d1b;
+  --color-bg-soft: #041421;
+  --color-navy: #01132f;
+  --color-blue-deep: #022c6a;
+  --color-blue: #024fa2;
+  --color-blue-bright: #0178ce;
+  --color-sky: #14a3ed;
+  --color-white: #fcfcfd;
+  --color-text: #f0f0f2;
+  --color-muted: #808992;
+  --color-teal: #033244;
+  --color-mint: #03b96e;
+  --color-mint-deep: #058f51;
+  --color-cyan: #0ebed6;
+  --color-purple: #8e08f2;
+
+  --color-up: var(--color-mint);
+  --color-down: var(--color-purple);
+  --color-surface: color-mix(in srgb, var(--color-navy) 55%, var(--color-bg));
+  --color-card: color-mix(in srgb, var(--color-navy) 38%, var(--color-bg));
+  --color-line: color-mix(in srgb, var(--color-muted) 20%, transparent);
+  --color-line-soft: color-mix(in srgb, var(--color-muted) 11%, transparent);
+  --color-line-strong: color-mix(in srgb, var(--color-muted) 38%, transparent);
+  --color-faint: color-mix(in srgb, var(--color-muted) 78%, var(--color-bg));
+  --grad-brand: linear-gradient(92deg, var(--color-mint), var(--color-cyan) 55%, var(--color-sky));
+
+  /* measured off the reference stylesheet: spacing, radii, easing, timing */
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-board: 14px;
+  --radius-lg: 24px;
+  --maxw: 1240px;
+  --gutter: 48px;
+  --nav-height: 64px;
+  --section-space: 112px;
+  --heading-size: 3.25rem;
+  --heading-line: 1.08;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-reveal: 700ms;
+  --dur-hover: 200ms;
+  --dur-fast: 150ms;
+  --dur-pulse: 2000ms;
+}
+
+@media (max-width: 1023px) {
+  :root { --section-space: 80px; --heading-size: 2.5rem; }
+}
+@media (max-width: 767px) {
+  :root { --section-space: 64px; --heading-size: 2rem; --gutter: 32px; }
+}

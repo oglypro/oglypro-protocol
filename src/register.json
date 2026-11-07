@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "records": {
+    "chain": {
+      "label": "Chain",
+      "state": "stated",
+      "value": "Solana",
+      "url": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-07"
+    },
+    "ca": {
+      "label": "Contract address",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "x": {
+      "label": "X",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "github": {
+      "label": "GitHub",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "market-source": {
+      "label": "Market source",
+      "state": "stated",
+      "url": "https://api.dexscreener.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "endpoints": {
+        "boosts": "https://api.dexscreener.com/token-boosts/top/v1",
+        "pairs": "https://api.dexscreener.com/tokens/v1/solana/",
+        "token": "https://api.dexscreener.com/latest/dex/tokens/"
+      },
+      "checked": "2026-11-07"
+    },
+    "logo-source": {
+      "label": "Token logo source",
+      "state": "stated",
+      "url": "https://frontend-api.pump.fun/coins/",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-07"
+    },
+    "venue-solscan": {
+      "label": "Solscan",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "venue-pumpfun": {
+      "label": "PumpFun",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "venue-jupiter": {
+      "label": "Jupiter",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "venue-dexscreener": {
+      "label": "DexScreener",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "venue-birdeye": {
+      "label": "Birdeye",
+      "state": "absent",
+      "checked": "2026-11-07"
+    },
+    "venue-rugcheck": {
+      "label": "RugCheck",
+      "state": "absent",
+      "checked": "2026-11-07"
+    }
+  }
+}
